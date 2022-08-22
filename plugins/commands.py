@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('💫 Group', url='https://t.me/MoviesClub_DiscussGroup')
+                InlineKeyboardButton('👥 𝗚𝗥𝗢𝗨𝗣', url='https://t.me/MoviesClub_DiscussGroup')
             ],
             [
-                InlineKeyboardButton('🤓 Channel', url=f"https://t.me/MoviesClub_PathWay"),
+                InlineKeyboardButton('🤓 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url="https://t.me/MoviesClub_PathWay"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,12 +42,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚡️ Main Channel ⚡️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚡️ 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚡️', url='https://t.me/MCSTREAM1')
             ],[
-            InlineKeyboardButton('🌟 Owner', url='https://t.me/TeamEvamaria'),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('🌟 𝗢𝗪𝗡𝗘𝗥', url='https://t.me/KpA_TG'),
+            InlineKeyboardButton('👥 𝗚𝗥𝗢𝗨𝗣', url='https://t.me/MoviesClub_DiscussGroup')
             ],[
-            InlineKeyboardButton('🤓 Channel', url='https://t.me/MoviesClub_PathWay'),
+            InlineKeyboardButton('🤓 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MoviesClub_PathWay'),
             InlineKeyboardButton('😊 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -88,12 +88,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚡️ 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚡️', url='https://t.me/MCSTREAM1')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('🌟 𝗢𝗪𝗡𝗘𝗥', url='https://t.me/KpA_TG'),
+            InlineKeyboardButton('👥 𝗚𝗥𝗢𝗨𝗣', url='https://t.me/MoviesClub_DiscussGroup')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('🤓 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MoviesClub_PathWay'),
             InlineKeyboardButton('😊 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
