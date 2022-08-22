@@ -48,7 +48,7 @@ async def start(client, message):
             InlineKeyboardButton('👥 𝗚𝗥𝗢𝗨𝗣', url='https://t.me/MoviesClub_DiscussGroup')
             ],[
             InlineKeyboardButton('🤓 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MoviesClub_PathWay'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('😊 𝗔𝗕𝗢𝗨𝗧', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -94,7 +94,7 @@ async def start(client, message):
             InlineKeyboardButton('👥 𝗚𝗥𝗢𝗨𝗣', url='https://t.me/MoviesClub_DiscussGroup')
             ],[
             InlineKeyboardButton('🤓 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MoviesClub_PathWay'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('😊 𝗔𝗕𝗢𝗨𝗧', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
